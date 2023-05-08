@@ -100,7 +100,7 @@ const Profile: FC<ProfileProps> = ({ setIsAuth }) => {
         }}
         onClick={() => {
           localStorage.setItem("auth", "false");
-          setIsAuth("false");
+          setIsAuth("true");
           navigate("/");
         }}
       >
