@@ -9,7 +9,7 @@ import Logout from "@mui/icons-material/Logout";
 import { useNavigate } from "react-router-dom";
 
 interface ProfileProps {
-  setIsAuth: Dispatch<SetStateAction<string | null>>;
+  setIsAuth: Dispatch<SetStateAction<string>>;
 }
 
 const Profile: FC<ProfileProps> = ({ setIsAuth }) => {
@@ -99,7 +99,7 @@ const Profile: FC<ProfileProps> = ({ setIsAuth }) => {
           borderBottom: "1px solid #4881D6",
         }}
         onClick={() => {
-          localStorage.setItem("auth", "false");
+          localStorage.setItem("auth", "true");
           setIsAuth("true");
           navigate("/");
         }}

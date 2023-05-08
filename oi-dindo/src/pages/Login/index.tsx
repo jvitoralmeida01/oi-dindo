@@ -13,7 +13,7 @@ import { Dispatch, FunctionComponent, SetStateAction, useState } from "react";
 import loginImg from "../../images/Login.svg";
 
 interface LoginPageProps {
-  setIsAuth: Dispatch<SetStateAction<string | null>>;
+  setIsAuth: Dispatch<SetStateAction<string>>;
 }
 
 const LoginPage: FunctionComponent<LoginPageProps> = ({ setIsAuth }) => {

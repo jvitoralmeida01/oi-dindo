@@ -27,7 +27,7 @@ function Router() {
     { label: "Perfil", value: "profile", icon: PersonIcon },
   ];
 
-  const [isAuth, setIsAuth] = useState(true);
+  const [isAuth, setIsAuth] = useState("true");
 
   return (
     <BrowserRouter>
