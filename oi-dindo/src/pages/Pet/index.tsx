@@ -246,7 +246,9 @@ const PetPage: FunctionComponent<PetPageProps> = () => {
             <Stack direction="row" justifyContent={"center"} marginTop={2}>
               <SharingComponent
                 shareUrl={ongData?.instagram || ""}
-                title={`Apadrinhe ${petData?.name} da Ong ${ongData?.name} pelo app Oi, Dindo!\n`}
+                title={
+                  `Apadrinhe "${petData?.name}" da Ong ${ongData?.name} pelo app Oi, Dindo:\nhttps://oi-dindo-pitch.vercel.app/ong/${ongData?.id}/pet/${petData?.id}\n\nVeja também o instagram da Ong ${ongData?.name} em:`
+                }
               />
             </Stack>
           </Box>
